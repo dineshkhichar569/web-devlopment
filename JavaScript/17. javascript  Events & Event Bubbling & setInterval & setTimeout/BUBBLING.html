@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .GrandFather{
+            background-color: aqua;
+            margin: 26px;
+            padding: 26px;
+            cursor: pointer;
+        }
+
+        .Father{
+            background-color: rgb(159, 133, 220);
+            margin: 26px;
+            padding: 26px;
+        }
+
+        .Son{
+            background-color: rgb(238, 193, 125);
+            margin: 26px;
+            padding: 26px;
+            font-size: 2em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="BOX">
+        
+    <div class="GrandFather">
+        <div class="Father">
+            <div class="Son">
+                Hello !
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+    <script src="BUBBLING.js"></script>
+</body>
+</html>

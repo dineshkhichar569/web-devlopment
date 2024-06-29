@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .bulb{
+            display: flex;
+            position: absolute;
+
+            height: 200px;
+            width: 150px;
+            background-color: #e25822;
+            transition:box-shadow 0.5s ease-in-out;
+            border-radius: 40% 40% 50% 50% ;
+        }
+
+        .glow{
+            box-shadow: 0 0 2000px 500px #e15501,
+            0 0 2px -500px rgb(215, 173, 117) ;
+        }
+    </style>
+</head>
+<body class="container">
+
+    <div class="bulb"></div>
+
+
+    <script src="glowingBulb.js"></script>
+</body>
+</html>

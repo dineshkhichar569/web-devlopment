@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkTheme</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+            transition: background-color 0.5s ease-in-out;  
+        }
+        .box{
+            border: 5px solid black;
+            height: 50px;
+            width: 90px;
+            border-radius: 10px;   
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            margin: 50px auto;
+            padding: 5px;    
+            cursor: pointer; 
+            transition: color 1s ease-in-out, background-color 1s ease-in-out, border 1s ease-in-out;
+        }
+        .button-glow{
+            background-color: rgba(25, 25, 25, 2);
+            color: white;
+            border: 5px solid white;
+        }
+
+        .glow{
+            background-color: rgba(25, 25, 25, 2);
+        }
+    </style>
+</head>
+<body class="container">
+
+    <button class="box">DarkTheme</button>
+
+
+    <script src="darkTheme.js"></script>
+</body>
+</html>

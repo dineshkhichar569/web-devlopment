@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Bookmarker</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333333;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        h1 {
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            margin: 0;
+            padding: 0;
+            background-color: #47CF73;
+            letter-spacing: 2px;
+            word-spacing: 8px;
+            color: #000;
+        }
+        
+        h2 {
+            color: #47CF73;
+        }
+        
+        .container {
+            width: 600px;
+            min-height: 150px;
+            background-color: #333333;
+            /* Add more styling as needed */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Site Bookmarker</h1>
+    <div class="container">
+        <form class="form" action="#">
+            <div class="input-field">
+                <label for="site_name">Name</label>
+                <input name="site_name" type="text" placeholder="site name">
+            </div>
+            <div class="input-field">
+                <label for="url">URL</label>
+                <input name="url" type="text" placeholder="https://www.example.com">
+            </div>
+            <button class="save_button">Save</button>
+        </form>
+        <h2>Saved Bookmarks</h2>
+        <div class="bookmarks"></div>
+    </div>
+    <script>
+// main.js
+
+document.querySelector('.save_button').addEventListener('click', saveBookmark);
+
+function saveBookmark(e) {
+    e.preventDefault();
+
+    const siteName = document.querySelector('[name="site_name"]').value;
+    const siteUrl = document.querySelector('[name="url"]').value;
+
+    if (!siteName || !siteUrl) {
+        alert('Please fill in both fields.');
+        return;
+    }
+
+    const bookmark = {
+        name: siteName,
+        url: siteUrl,
+    };
+
+    // Get existing bookmarks from local storage
+    const bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+
+    // Add new bookmark
+    bookmarks.push(bookmark);
+
+    // Save to local storage
+    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+
+    // Clear form fields
+    document.querySelector('[name="site_name"]').value = '';
+    document.querySelector('[name="url"]').value = '';
+
+    // Display saved bookmarks
+    displayBookmarks();
+}
+
+function displayBookmarks() {
+    const bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+    const bookmarksDiv = document.querySelector('.bookmarks');
+
+    bookmarksDiv.innerHTML = '';
+
+    bookmarks.forEach((bookmark) => {
+        const link = document.createElement('a');
+        link.href = bookmark.url;
+        link.target = '_blank';
+        link.textContent = bookmark.name;
+
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.addEventListener('click', () => deleteBookmark(bookmark.url));
+
+        bookmarksDiv.appendChild(link);
+        bookmarksDiv.appendChild(deleteButton);
+    });
+}
+
+function deleteBookmark(url) {
+    const bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+    const updatedBookmarks = bookmarks.filter((bookmark) => bookmark.url !== url);
+    localStorage.setItem('bookmarks', JSON.stringify(updatedBookmarks));
+    displayBookmarks();
+}
+
+// Initial display
+displayBookmarks();
+
+    </script>
+</body>
+</html>

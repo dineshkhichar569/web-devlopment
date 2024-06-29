@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website Builder</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            background-color: rgba(23, 23, 23, 0.9);
+            height: 200px;
+            width: 1000px;
+            margin: 50px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .thumbnail img{
+            width: 300px;
+            border-radius: 10px;
+            position: absolute;
+            top: 16px;
+            left: 15px;
+        }
+        .info{
+            color: white;
+            position: absolute;
+            left: 330px;
+            top: 30px;
+        }
+        .intro{
+            margin-bottom: 60px;
+        }
+        .duration{
+            position: absolute;
+            color: white;
+            background-color: rgba(23, 23, 23, 0.9);
+            padding: 3px;
+            border-radius: 5px;
+            left: 255px;
+            top: 150px;
+        }
+
+        .more{
+            position: relative;
+            left: 100px;
+            top: 25px;
+        }
+        .more button{
+            padding: 10px;
+            background-color: rgba(25, 25, 25, 1);
+            color: white;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="more">
+        <button>More...</button>
+    </div>
+    <div class="Card">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

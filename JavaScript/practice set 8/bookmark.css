@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background: linear-gradient(90deg , black , white); */
+    background:repeating-linear-gradient(90deg, rgb(110, 106, 106), rgb(47, 44, 44));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    /* background: repeating-linear-gradient(90deg, rgb(75, 72, 72), rgb(63, 61, 61)); */
+    background-color: rgb(144, 144, 144);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 600;
+
+}
+.head{
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 40px 0 20px 20px;
+}
+
+.in{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 40px;
+    font-size: 1em;
+    font-weight: 500;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgba(23, 23, 23, 0.4);
+    margin: 0 0 10px 0;
+    padding: 5px;
+}
+.in2{
+    margin-left: 14px;
+}
+input::placeholder{
+    padding: 8px;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 50px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: rgba(23, 23, 23, 0.4);
+    padding: 5px 10px 5px 10px;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 40px 0 20px 20px;
+}
+
+.stored{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 40px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
