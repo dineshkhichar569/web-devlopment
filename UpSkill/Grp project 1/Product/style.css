@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background-color: white;
+    }
+    
+    nav .logo{
+        font-size: 2rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    nav .logo a span{
+        color: rgb(4, 13, 192);
+    }
+    nav .logo a{
+        text-decoration: none;
+        color: rgb(11, 195, 1);
+    }
+    nav .list{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 30px;
+    }
+    nav .list li a{
+        text-decoration: none;
+        color: #808080;
+        font-weight: 500;
+        font-size: 14.5px;
+    }
+    
+    .navright .search{
+        position: relative;
+        display: flex;
+    }
+    .search img{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+        pointer-events: none;
+    }
+    .search input{
+        border-radius: 5px;
+        padding: 4px 0 4px 25px;
+        border: 1.5px solid #808080;
+        outline: none;
+        background-color: transparent;
+    }
+    .search input::placeholder{
+        font-size: 10px;
+    }
+    
+    .cart{
+        border: 1.5px solid #808080;
+        border-radius: 5px;
+        padding: 2px 6px 2px 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+    
+    nav .navright{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+    }
+    
+    nav .login{
+        background: linear-gradient(45deg, rgb(44, 44, 48), rgb(163, 170, 189));
+        height: 35px;
+        width: 35px;
+        border-radius: 9999px;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+}
+.main-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+.main-product .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.top .left-side{
+    height: 400px;
+    width: 590px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top .right-side{
+    height: 400px;
+    width: 590px;
+}
+
+.right-side .cost{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0 21px 0;
+}
+.cost .rs{
+    background-color: rgb(216, 230, 240);
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    color: rgb(8, 8, 211);
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+.cost .discount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+}
+.discount span:nth-of-type(1){
+    color: rgb(5, 162, 5);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.discount span:nth-of-type(2){
+    color: #808080;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.right-side .option{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+}
+.option input{
+    width: 65px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(237, 237, 237);
+    color: #808080;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 0 10px 0 26px;
+}
+.option .add button{
+    background: linear-gradient(45deg, rgb(44, 44, 48), rgb(163, 170, 189));
+    border: none;
+    padding: 16px 35px 16px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.add button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%;
+}
+
+
+.bottom .bottom-options{
+    background-color: rgb(237, 237, 237);
+    height: 100%;
+    width: 17%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

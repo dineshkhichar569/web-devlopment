@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(230, 229, 229);
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+nav .logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+}
+nav .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+.list li a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 500;
+}
+nav button{
+    text-align: center;
+    padding: 10px 30px;
+    color: rgb(16, 92, 184);
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(207, 255, 255);
+    border: none;
+    border-radius: 999px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.left-box
+, .right-box{
+    width: 450px;
+    height: 600px;
+    border-radius: 15px;
+}
+.right-box{
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+.left-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left-box .up
+, .left-box .down{
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+}
+
+.left-box .down{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+}
+.down .book{
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.down .name{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+.down label{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(90, 90, 90);
+}
+.down input{
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid lightgray;
+    width: 100%;
+    outline: none;
+}
+.down .email-pass{
+    padding-bottom: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.down button{
+    width: 100%;
+    padding: 16px;
+    background-color: rgb(115, 115, 244);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: not-allowed;
+}
+.down button:active{
+    background-color: rgb(78, 78, 198);
+}
+
+.left-box .up{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0 10px 0;
+    position: relative;
+}
+.up .add{
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.table{
+    border: 1px solid lightgray;
+    border-left: 0;
+    border-right: 0;
+    height: 200px;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.table .head{
+    background-color: lightgray;
+    width: 100%;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head span:nth-of-type(2){
+    padding-right:200px;
+}
+    
+.table .body{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* background-color: beige; */
+    width: 100%;
+    height: 83.5%;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.body .tbody{
+    display: flex;
+}
+.body .initial-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 20%;
+    transform: translate(0%);
+}
+.initial-display span:nth-of-type(1){
+    font-size: 40px;
+    font-weight: 900;
+}
+.initial-display span:nth-of-type(2){
+    font-weight: 700;
+    font-size: 20px;
+}
+.initial-display span:nth-of-type(3){
+    font-size: 14px;
+    color: rgb(111, 111, 111);
+    font-weight: 500;
+}
+
+.body .service{
+    width: 100%;
+}
+.body .no{
+    width: 19%;
+    padding-left: 7px;
+}
+
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 15px 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.message1{
+    color: rgb(222, 0, 0);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* /////////////////////////////////////////////////////////// */
+
+.right-box{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.browse p{
+    color: grey;
+    font-size: 14px;
+}
+
+.items .add-skip-btns{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 15px 0;
+}
+.items .skip-btn{
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(253, 209, 215);
+    background-color: rgb(255, 232, 235);
+    color: red;
+    font-weight: 500;
+}
+.items .add-btn{
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(199, 253, 199);
+    background-color: rgb(233, 255, 233);
+    color: green;
+    font-weight: 500;
+}
+.skip-btn:active{
+    border: 1px solid rgb(255, 177, 187);
+}
+.add-btn:active{
+    border: 1px solid rgb(161, 255, 161);
+}
+
+.message2{
+    color: blue;
+    cursor: pointer;
+}
+
+.right-box .items{
+    border: 1px solid lightgray;
+    border-left: 0;
+    border-right: 0;
+    padding: 20px 0 20px 0;
+}
+.items .item{
+    width: 100%;
+    height: 300px;
+}
+
+
+.item .item-image{
+    background-color: rgb(205, 205, 205);
+    border-radius: 10px;
+    height: 85%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+.item .item-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.item .item-about{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 600;
+}

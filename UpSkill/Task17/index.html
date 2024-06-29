@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="#">Logo</a>
+          </div>
+          <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <button>Username</button>
+        </nav>
+      </header>
+
+      <main>
+        <div class="left-box">
+          
+          
+          <div class="up">
+
+            <div class="add">Added Items</div>
+            
+            <div class="table">
+              <div class="head">
+                <span>S.No</span>
+                <span>Service Name</span>
+                <span>Price</span>
+              </div>
+              <div class="body">
+                <div class="initial-display">
+                  <span>ⓘ</span>
+                  <span>No item Added</span>
+                  <span>Add item to the cart from the service bar</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="total">
+              <strong>Total Amount</strong>
+              <strong class="total-price">₹ 0</strong>
+            </div>
+
+          </div>
+
+
+          <div class="down">
+            <div class="book">Book Now</div>
+
+            <div class="name">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="enter your name..." required>  
+            </div>
+            <div class="email-pass">
+              <div class="email">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" placeholder="email@gmail.com" required>  
+              </div>
+              <div class="pass">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="0000000000">
+              </div>
+            </div>
+            
+            <button class="btn">Book Now</button>
+
+            <div class="message1"></div>
+          </div>
+        </div>
+        <div class="right-box">
+          <div class="browse">
+            <h2>Browse Our Services</h2>
+            <p>Click on add to cart button to add the services to your cart or pres skip</p>
+          </div>
+          <div class="items">
+            <div class="item">
+              <div class="item-image"></div>
+              <div class="item-about">
+                <div class="item-name"></div>
+                <div style="color: blue;">₹<span class="item-price"></span>.00</div>
+              </div>
+            </div>
+            <div class="add-skip-btns">
+              <button class="skip-btn">Skip item</button>
+              <button class="add-btn">Add item</button>
+            </div>
+          </div>
+          <div class="message2">
+            ⓘ Add the items to the cart and book now
+          </div>
+        </div>
+      </main>
+
+
+      <script src="script.js"></script>
+</body>
+</html>

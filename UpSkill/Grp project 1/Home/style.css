@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+header{
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background-color: white;
+    }
+    
+    nav .logo{
+        font-size: 2rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    nav .logo a span{
+        color: rgb(4, 13, 192);
+    }
+    nav .logo a{
+        text-decoration: none;
+        color: rgb(11, 195, 1);
+    }
+    nav .list{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 30px;
+    }
+    nav .list li a{
+        text-decoration: none;
+        color: #808080;
+        font-weight: 500;
+        font-size: 14.5px;
+    }
+    
+    .navright .search{
+        position: relative;
+        display: flex;
+    }
+    .search img{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+        pointer-events: none;
+    }
+    .search input{
+        border-radius: 5px;
+        padding: 4px 0 4px 25px;
+        border: 1.5px solid #808080;
+        outline: none;
+        background-color: transparent;
+    }
+    .search input::placeholder{
+        font-size: 10px;
+    }
+    
+    .cart{
+        border: 1.5px solid #808080;
+        border-radius: 5px;
+        padding: 2px 6px 2px 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
+    
+    nav .navright{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+    }
+    
+    nav .login{
+        background: linear-gradient(45deg, rgb(44, 44, 48), rgb(163, 170, 189));
+        height: 35px;
+        width: 35px;
+        border-radius: 9999px;
+    }
+}
+main{
+    .main-content{
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        margin: 0 130px 0 130px;
+        padding-top: 100px;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        padding-right: 100px;
+        gap: 15px;
+    }
+    .left h1{
+        color: rgb(58, 58, 58);
+        font-size: 70px;
+        display: flex;
+        flex-direction: column;
+        line-height: 65px;
+    }
+    .left h1 span{
+        color: rgb(11, 195, 1);
+    }
+    .left p{
+        color: #808080;
+        font-weight: 500;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    .left button{
+        background: linear-gradient(45deg, rgb(44, 44, 48), rgb(163, 170, 189));
+        border: none;
+        border-radius: 40px;
+        padding: 13px 55px 13px 55px;
+        }
+    
+    .left button a{
+        text-decoration: none;
+        font-weight: 500;
+        color: #dadada;
+        font-size: 15px;
+    }
+    
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right img{
+        height: 580px;
+        
+    }
+}
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.foot{
+    background-color: rgb(11, 195, 1);
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 23px;
+}
+.foot .foote{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.foote div{
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 16px;
+}
+.foote div span{
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.foote img{
+    height: 40px;
+    color: white;
+}
