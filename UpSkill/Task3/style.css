@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container .box{
+    position: relative;
+}
+.container .box .image{
+    background-color: bisque;
+    height: 300px;
+    width: 500px;
+    background-image: url(di.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px 10px 0 0;
+}
+
+.container button{
+    position: absolute;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid black;
+    padding: 10px ;
+    color: white;
+    background: linear-gradient(45deg, rgb(211, 31, 151), rgb(2, 113, 192));
+}
+.box button:hover{
+    background: linear-gradient(270deg, rgb(211, 31, 151), rgb(2, 113, 192));
+}

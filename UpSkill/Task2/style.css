@@ -1,0 +1,33 @@
+body{
+    background-color:rgb(254, 148, 81);
+}
+
+.head{
+    color: blue;
+}
+
+#bglime{
+    background-color: aquamarine;
+}
+
+.head span{
+    color: red;
+}
+
+p{
+    color: white;
+}
+
+p#para{
+    color: green;
+}
+p#para span{
+    color: black;
+    font-size: 1.5em;
+}
+li:nth-of-type(1) strong{
+    background-color:brown;
+}
+li:nth-of-type(2) strong{
+    background-color:blueviolet;
+}
