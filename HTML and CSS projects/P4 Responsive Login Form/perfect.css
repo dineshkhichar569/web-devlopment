@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #f0c392;
+}
+
+.container{
+    max-width: 400px;
+    padding: 0 20px;
+    margin: 200px auto; 
+}
+
+.Box form {
+    position: relative;
+    background-color: white;
+    height: 380px;
+    /* width: 400px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+form .logo{
+    /* position: absolute; */
+    line-height: 80px;
+    background-color:   #c89666;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+form .row{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    position: relative;
+}
+.row input{
+    width: 100%;
+    max-width: 300px;
+
+    padding: 15px 80px 15px 55px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #f0c392;
+}
+.row input:focus{
+    box-shadow: 0 0 4px 2px #c89666;
+}
+.row input::placeholder{
+    color: rgb(175, 171, 171);
+    font-size: 11px;
+}
+.row i{
+    background-color: #f0c392;
+    color: #c89666;
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0%;
+    border-radius: 5px 0 0 5px;
+}
+
+form .lost{
+    position: relative;
+    margin: 0px 176px 0 0;
+}
+form .lost a{
+    color: #c89666;
+    text-decoration: none;
+}
+form .lost a:hover{
+    text-decoration:underline ;
+}
+
+form .btn input{
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    background-color: #f0c392;
+    padding: 15px 155px 15px 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    transition: background-color 0.1s linear;
+    border: none;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btn input:hover{
+    background-color: #c89666;
+}
+.btn input:focus{
+    box-shadow: 0 0 4px 2px #c89666;
+}
+
+form .sin{
+    position: absolute;
+    bottom:5% ;
+}
+form .sin a{
+    text-decoration: none;
+    color: #f0c392;
+    font-weight: 500;
+}
+form .sin a:hover{
+    color: #c89666;
+}
+
+
+

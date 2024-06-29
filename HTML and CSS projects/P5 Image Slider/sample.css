@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(25, 25, 25, 0.8);
+    color: white;
+}
+
+.container{
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    height: 80px;
+    width: 100px;
+    margin: 4px;
+    border-radius: 20px;
+    transition: width 0.5s linear, height 0.5s linear;
+}
+/* .box:hover{
+    width: 250px;
+    height: 150px;
+} */
+.box1{
+    background: url(image/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box2{
+    background: url(image/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box3{
+    background: url(image/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box4{
+    background: url(image/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box5{
+    background: url(image/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box6{
+    background: url(image/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box7{
+    background: url(image/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box8{
+    background: url(image/8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.show1{
+    background-image: url(image/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.show2{
+    background: url(image/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.show3{
+    background: url(image/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.show4{
+    background: url(image/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.show5{
+    background: url(image/5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.show6{
+    background: url(image/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.show7{
+    background: url(image/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.show8{
+    background: url(image/8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
