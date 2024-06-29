@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(227, 199, 254);
+}
+
+.container{
+    border: 2px solid black;
+    display: grid;
+    /* gap: 10px; */
+    row-gap: 40px;
+    column-gap: 100px;
+    grid-template-areas: "nav nav nav"
+                         "side article article"
+                         "footor footor footor";
+}
+.item{
+    border: 3px solid red;
+    height: 55px;
+    /* width: 55px; */
+}
+
+/* .item1{
+    grid-area: nav;
+}
+.item2{
+    grid-area:side;
+}
+.item3{
+}
+.item4{
+}
+.item5{
+    grid-area: footor;
+}
+.item6{
+} */

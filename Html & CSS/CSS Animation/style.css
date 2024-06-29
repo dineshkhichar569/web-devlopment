@@ -1,0 +1,67 @@
+body{
+    background-color: red;
+}
+
+.box1{
+    color: black;
+    background-color: yellow;
+    width: 4.5vw;
+    height: 5vh;
+/* IN DIFFERENT */
+
+    /* animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0, 0, 0.28, 1.19);
+    animation-delay:1s ;
+    animation-direction:alternate-reverse; */
+
+/* IN ONE */
+
+    animation: animation 3s cubic-bezier(0, 0, 0.28, 1.19) 1s infinite alternate-reverse ;
+}
+@keyframes animation{
+    from{
+        background-color: blue;
+        color: yellow;
+    }
+    to{
+        color: blue;
+        transform: translateX(1300px) translateY(500px) scale(3) rotate(360deg);
+    }
+}
+
+.box2{
+    color: black;
+    background-color: yellow;
+    width: 3vw;
+    height: 2.5vh;
+    animation: anime 3s linear 1s infinite alternate-reverse;
+}
+
+@keyframes anime{
+    20%{
+        transform: rotate(30deg);
+    }
+    40%{
+        transform: rotate(90deg);
+    }
+    60%{
+        transform: rotate(180deg);
+    }
+    80%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    from{
+        background-color: black;
+        color: white;
+    }
+    to{
+        background-color: white;
+        color: black23237;
+    }
+
+}
